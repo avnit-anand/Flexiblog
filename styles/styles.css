@@ -395,6 +395,10 @@ li::marker {
 }
 
 @media screen and (min-width:1024px) {
+  .branding_and_card{
+    grid-template-rows: 45% 55%;
+  }
+
   .section-center{
     grid-template-columns: 3fr 1fr;
   }
