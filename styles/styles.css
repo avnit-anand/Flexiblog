@@ -97,15 +97,16 @@ Section Center
 }
 
 .content{
-  /* background-color: palegreen; */
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 10%;
 }
 
 .user{
-  display: grid;
-  grid-template-rows: 50% 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5%;
 }
 
 .name{
@@ -126,12 +127,17 @@ Section Center
 }
 
 .user-info .name{
-  font-weight: 400;
+  font-weight: 600;
   color:#e2e8f0;
+  transition: var(--transition);
+}
+
+.user-info .name:hover{
+  color: #667eea;
 }
 
 .design-btn-1{
-  color: #667eea;
+  background-color: #667eea;
 }
 
 /* 
@@ -307,10 +313,13 @@ li::marker {
   }
 
   .btn-container{
-    margin-top: 10px;
-    display: grid;
+    margin-top: 20%;
+    /* display: grid;
     grid-template-rows: 33.33% 33.33% 33.33%  ;
-    margin-left: 10%;
+    margin-left: 10%; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
   }
 
   .timing{
@@ -322,17 +331,11 @@ li::marker {
   
   .user-img{
     display: block;
+    margin-right: 5%;
   }
 
   .name{
     margin-top: 0%;
-  }
-
-  .user{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 100%;
-    margin-top: 20px;
   }
 
   .user-photo{
@@ -346,11 +349,6 @@ li::marker {
 
   .user-photo:hover{
     background-color: #ebf4ff;
-  }
-
-  .user-info{
-    margin-left: 10px;
-    align-self: center;
   }
 
   .content{
@@ -381,17 +379,19 @@ li::marker {
   .content h1{
     font-size: 1.25rem;
     line-height: 1.25;
+    margin-top: 5%;
   }
 
-  .design-btn-1{
-    color: #667eea;
-  }
+  /* .design-btn{
+    align-self: end;
+  } */
 }
 
 @media screen and (min-width:768px) {
   .user-info{
     margin-left: 0;
   }
+
 }
 
 @media screen and (min-width:1024px) {
